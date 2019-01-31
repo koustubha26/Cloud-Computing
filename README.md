@@ -8,8 +8,7 @@ The main idea of implementing the software is to store all the hardware, image, 
 ### Data Structures
 
 #### Hardware
-The Hardware class maintain two lists (use dictionary in python), one rack list and one machine list. The machine name/rack name as key and a dictionary for detailed information such as name, mem, vcpus, etc as value. The class provide many basic methods such as insert/delete rack/machine, get a machine information, listing the hardware information and etc.
-The program keep track of two Hardware entity one for configured hardware information, the other for the free resource information for creating and deleting instances.
+The Hardware class maintain two lists (use dictionary in python), one rack list and one machine list. The machine name/rack name as key and a dictionary for detailed information such as name, mem, vcpus, etc as value. The class provide many basic methods such as insert/delete rack/machine, get a machine information, listing the hardware information and etc. The program keep track of two Hardware entity one for configured hardware information, the other for the free resource information for creating and deleting instances.
 
 #### Rack
 The Rack class maintain a list of image using as the information of image cache in the Rack storage server. This class is used for the allocating policy (creating instance). The image cache information can be retrived from the Rack class using rack name.
